@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+    <h2>Transactions</h2>
+    <ul id="transactionsList"></ul>
+    <form id="transactionForm">
+        <input type="number" id="amount" placeholder="Amount" required><br>
+        <input type="text" id="category" placeholder="Category" required><br>
+        <input type="date" id="date" required><br>
+        <textarea id="description" placeholder="Description"></textarea><br>
+        <button type="submit">Add Transaction</button>
+    </form>
+    <script src="js/auth.js"></script>
+    <script src="js/transactions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Expense Tracker</h1>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <section class="navbar-section">
+        <div class="logo">
+            <a href=""><i class="fas fa-wallet"></i> Expense</a>
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-items" id="navItems">
+            <ul>
+                <li>
+                    <a href="#loginModal" class="modal-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+                </li>
+                <li>
+                    <a href="#registerModal" class="modal-link"><i class="fas fa-sign-in-alt"></i> Register</a>
+                </li>
+                </li>
+                <li>
+                    <a href="#addExpenseModal" class="modal-link"><i class="fas fa-plus-circle"></i> Add expense</a>
+                </li>
+                <li>
+                    <a href="#editExpenseModal" class="modal-link"><i class="fas fa-info-circle"></i> Edit expense</a>
+                </li>
+                <li>
+                    <a href="#viewExpenseModal" class="modal-link"><i class="fas fa-eye"></i> View expense</a>
+                </li>
+                <li>
+                    <a href="#dashboardModal" class="modal-link"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="hero-section">
+        <div class="hero-container">
+            <header>
+                <h1>Expense Tracker</h1>
+            </header>
+            <h1>Welcome to the Expense Tracker. </h1>
+            <h2>Empowering You to Take Control of Your Finances</h2>
+            <p>Stop wondering where your money goes. Track it effortlessly with our expense tracker.</p>
+            <a href="#registerModal" class="btn modal-link">Sign Up for Free</a>
+        </div>
+        <div class="hero-img">
+            <img src="images/Project_expense_tracking_software.png" alt="Expense Tracker Interface">
+        </div>
+    </section>
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <img src="images/expense.jpeg" alt="">
+        </div>
+
+        <div class="about-desc">
+            <h2>About Expense Tracker</h2>
+            <h3>This expense tracker application is dedicated in helping you manage your financial life.</h3>
+            <p>
+                The Expense Tracker is designed to help you manage your finances with ease. Our intuitive interface allows you to quickly add, edit, and view your expenses, providing you with a clear overview of where your money is going. Whether you're managing personal
+                finances or keeping track of business expenditures, our tool is tailored to meet your needs. Join our community and take the first step towards financial freedom today.
+            </p>
+            <div class="about-feature">
+                <h1>Features of Expense Tracker</h1>
+                <div class="feature-row">
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Easy to use</h3>
+                    </div>
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Comprehensive</h3>
+                    </div>
+                </div>
+                <div class="feature-row">
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Safe and Secure</h3>
+                    </div>
+                    <div class="about-icon">
+                        <div class="round-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <h3>Your Best Friend</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="login-section">
+        <div class="contact-section">
+            <div class="login-image">
+                <img src="images/contact.webp" alt="">
+            </div>
+
+            <div class="login-container">
+                <h2>Contact Us</h2>
+                <div class="cont-row">
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input placeholder="Enter Your Name" type="text" name="user_code">
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Enter a Valid Email" type="email" name="user_password" id="passwordField3">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" rows="10" cols="43" id="">Your Message</textarea>
+                        </div>
+                        <input type="submit" name="loginUser" class="btn-register" value="Send Message">
+                    </form>
+
+                    <div class="contact-cat">
+                        <div class="contact-bx">
+                            <i class="fas fa-phone"></i>
+                            <h4>OUR MAIN OFFICE</h4>
+                            <h4>SoHo 94 Broadway <br>St New York, NY 1001</h4>
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-envelope"></i>
+                            <h4>PHONE NUMBER</h4>
+                            <h4>234-9876-5400 888-0123-4567</h4>
+                        </div>
+                        <div class="contact-bx">
+                            <i class="fas fa-map-marker"></i>
+                            <h4>EMAIL</h4>
+                            <h4>helloexample@gmail.com</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer-section">
+        <footer class="footer-cont">
+            <div class="footer-abt">
+                <h2>About Us</h2>
+                <p>The Expense Tracker is designed to help you manage your finances with ease. Our intuitive interface allows you to quickly add, edit, and view your expenses, providing you with a clear overview of where your money is going.</p>
+            </div>
+            <div class="foot-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li>
+                        <a href="">Add Expense</a>
+                    </li>
+                    <li>
+                        <a href="">Edit Expense</a>
+                    </li>
+                    <li>
+                        <a href="">View Expense</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="socials">
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+            </div>
+        </footer>
+        <div class="foot">
+            <p>&COPY; 2024 Expense Tracker | All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Login</h2> -->
+            <iframe src="login.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Login</h2> -->
+            <iframe src="register.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="addExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Add Expense</h2> -->
+            <!-- Add expense form content -->
+            <iframe src="add_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="viewExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>View Expense</h2> -->
+            <!-- View expense content -->
+            <iframe src="view_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="editExpenseModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Edit Expense</h2> -->
+            <!-- Edit expense form content -->
+
+            <iframe src="edit_expense.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <div id="dashboardModal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fas fa-close"></i></span>
+            <!-- <h2>Edit Expense</h2> -->
+            <!-- Edit expense form content -->
+
+            <iframe src="dashboard.html" frameborder="0" style="width: 100%; height: 100vh;"></iframe>
+        </div>
+    </div>
+    <script>
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            var navItems = document.getElementById('navItems');
+            var burgerIcon = document.querySelector('.burger-menu i');
+            navItems.classList.toggle('active');
+            burgerIcon.classList.toggle('fa-bars');
+            burgerIcon.classList.toggle('fa-times');
+        });
+    </script>
+    <script>
+        // Get all modal links
+        var modalLinks = document.querySelectorAll('.modal-link');
+
+        // Iterate through each modal link
+        modalLinks.forEach(function(link) {
+            link.onclick = function(event) {
+                event.preventDefault();
+                var modalId = link.getAttribute('href');
+                var modal = document.querySelector(modalId);
+                modal.style.display = "block ";
+            }
+        });
+
+        // Get all the close buttons
+        var closeButtons = document.querySelectorAll('.close');
+
+        // Iterate through each close button
+        closeButtons.forEach(function(button) {
+            button.onclick = function() {
+                var modal = button.closest('.modal');
+                modal.style.display = "none ";
+            }
+        });
+
+        // Close the modal when the user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none ";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
